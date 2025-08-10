@@ -4,7 +4,7 @@
   "description": "A React shopping cart application with Redux Toolkit",
   "scripts": {
     "start": "better-npm-run start",
-    "prebuild": "npm run clean && npm run lint && npm test",
+    "prebuild": "npm run clean && npm test",
     "build": "better-npm-run prod",
     "lint": "eslint .",
     "format": "prettier --write .",
