@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`cartSlice matches snapshot with empty cart 1`] = `
+{
+  "isOpen": false,
+  "items": [],
+  "totalAmount": 0,
+  "totalQuantity": 0,
+}
+`;
+
+exports[`cartSlice matches snapshot with items in cart 1`] = `
+{
+  "isOpen": false,
+  "items": [
+    {
+      "id": 1,
+      "image": "test-image.jpg",
+      "price": 29.99,
+      "quantity": 1,
+      "title": "Test Product",
+    },
+    {
+      "id": 2,
+      "image": "test-image.jpg",
+      "price": 29.99,
+      "quantity": 1,
+      "title": "Product 2",
+    },
+  ],
+  "totalAmount": 59.98,
+  "totalQuantity": 2,
+}
+`;

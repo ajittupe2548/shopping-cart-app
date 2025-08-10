@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Header matches snapshot with empty cart 1`] = `
+<header
+  class="header"
+>
+  <div
+    class="headerContent"
+  >
+    <h1
+      class="logo"
+    >
+      Shopping Cart
+    </h1>
+    <button
+      class="cartIcon"
+    >
+      🛒 Cart
+    </button>
+  </div>
+</header>
+`;
+
+exports[`Header matches snapshot with items in cart 1`] = `
+<header
+  class="header"
+>
+  <div
+    class="headerContent"
+  >
+    <h1
+      class="logo"
+    >
+      Shopping Cart
+    </h1>
+    <button
+      class="cartIcon"
+    >
+      🛒 Cart
+      <span
+        class="cartCount"
+      >
+        5
+      </span>
+    </button>
+  </div>
+</header>
+`;

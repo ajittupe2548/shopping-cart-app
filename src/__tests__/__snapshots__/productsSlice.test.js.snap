@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`productsSlice matches snapshot with initial state 1`] = `
+{
+  "error": null,
+  "items": [],
+  "status": "idle",
+}
+`;
+
+exports[`productsSlice matches snapshot with loaded products 1`] = `
+{
+  "error": null,
+  "items": [
+    {
+      "category": "test",
+      "description": "Test description",
+      "id": 1,
+      "image": "test1.jpg",
+      "price": 29.99,
+      "rating": {
+        "count": 120,
+        "rate": 4.5,
+      },
+      "title": "Test Product 1",
+    },
+    {
+      "category": "test",
+      "description": "Test description 2",
+      "id": 2,
+      "image": "test2.jpg",
+      "price": 39.99,
+      "rating": {
+        "count": 80,
+        "rate": 4,
+      },
+      "title": "Test Product 2",
+    },
+  ],
+  "status": "succeeded",
+}
+`;

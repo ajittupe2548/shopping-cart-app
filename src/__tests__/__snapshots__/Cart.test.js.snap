@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Cart matches snapshot when cart is closed 1`] = `
+<div
+  class="cartOverlay "
+/>
+`;
+
+exports[`Cart matches snapshot when cart is open with items 1`] = `
+<div
+  class="cartOverlay open"
+/>
+`;

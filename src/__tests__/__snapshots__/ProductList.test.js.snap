@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ProductList Component matches snapshot in error state 1`] = `
+<div
+  class="error"
+>
+  Error: 
+  Network error
+</div>
+`;
+
+exports[`ProductList Component matches snapshot in loading state 1`] = `
+<div
+  class="loading"
+>
+  Loading products...
+</div>
+`;
+
+exports[`ProductList Component matches snapshot with products 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="productsGrid"
+  >
+    <div
+      data-testid="product-1"
+    >
+      Test Product 1
+    </div>
+    <div
+      data-testid="product-2"
+    >
+      Test Product 2
+    </div>
+  </div>
+</div>
+`;

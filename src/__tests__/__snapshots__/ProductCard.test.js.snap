@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ProductCard matches snapshot 1`] = `
+<div
+  class="productCard"
+>
+  <div
+    class="imageContainer"
+  >
+    <div
+      class="imagePlaceholder"
+    >
+      Loading...
+    </div>
+    <img
+      alt="Test Product"
+      class="productImage "
+      decoding="async"
+      loading="lazy"
+      src="test-image.jpg"
+    />
+  </div>
+  <div
+    class="productInfo"
+  >
+    <div
+      class="productCategory"
+    >
+      test category
+    </div>
+    <h3
+      class="productTitle"
+    >
+      Test Product
+    </h3>
+    <p
+      class="productDescription"
+    >
+      This is a test product description
+    </p>
+    <div
+      class="productRating"
+    >
+      <span
+        class="stars"
+      >
+        ⭐⭐⭐⭐⭐
+      </span>
+      <span
+        class="ratingText"
+      >
+        (
+        120
+         reviews)
+      </span>
+    </div>
+    <div
+      class="productPrice"
+    >
+      $
+      29.99
+    </div>
+    <button
+      class="addToCartBtn"
+    >
+      Add to Cart
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ProductCard matches snapshot with no rating 1`] = `
+<div
+  class="productCard"
+>
+  <div
+    class="imageContainer"
+  >
+    <div
+      class="imagePlaceholder"
+    >
+      Loading...
+    </div>
+    <img
+      alt="Test Product"
+      class="productImage "
+      decoding="async"
+      loading="lazy"
+      src="test-image.jpg"
+    />
+  </div>
+  <div
+    class="productInfo"
+  >
+    <div
+      class="productCategory"
+    >
+      test category
+    </div>
+    <h3
+      class="productTitle"
+    >
+      Test Product
+    </h3>
+    <p
+      class="productDescription"
+    >
+      This is a test product description
+    </p>
+    <div
+      class="productRating"
+    >
+      <span
+        class="stars"
+      />
+      <span
+        class="ratingText"
+      >
+        (
+        0
+         reviews)
+      </span>
+    </div>
+    <div
+      class="productPrice"
+    >
+      $
+      29.99
+    </div>
+    <button
+      class="addToCartBtn"
+    >
+      Add to Cart
+    </button>
+  </div>
+</div>
+`;
