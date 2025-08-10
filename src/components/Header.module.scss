@@ -31,6 +31,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1rem;
+  display: flex;
+  gap: 5px;
 
   &:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -38,10 +40,16 @@
   }
 }
 
+.cartSvg {
+  height: 20px;
+  width: 20px;
+  fill: #fff;
+}
+
 .cartCount {
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: -5px;
+  right: -5px;
   background: #ff4757;
   color: white;
   border-radius: 50%;

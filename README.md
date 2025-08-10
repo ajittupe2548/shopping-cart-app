@@ -106,4 +106,4 @@ src/
 
 ## Live Application
 
-Live URL: [Deployed Application URL Here]
+Live URL: https://shopping-cart-app-cryt.vercel.app/

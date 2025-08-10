@@ -90,7 +90,6 @@
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^6.0.1"
   },
-  "sideEffects": false,
   "browserslist": {
     "production": [
       ">0.2%",
