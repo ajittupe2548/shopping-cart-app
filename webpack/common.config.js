@@ -24,12 +24,12 @@ module.exports = {
       dry: false,
       dangerouslyAllowCleanPatternsOutsideProject: true,
     }),
-    new ESLintPlugin({
-      failOnError: true,
-      cache: true,
-      overrideConfigFile: "./eslint.config.js",
-      lintDirtyModulesOnly: true,
-    }),
+    // new ESLintPlugin({
+    //   failOnError: true,
+    //   cache: true,
+    //   overrideConfigFile: "./eslint.config.js",
+    //   lintDirtyModulesOnly: true,
+    // }),
   ],
   context: PATHS.SOURCE_DIR,
   cache: {

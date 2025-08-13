@@ -3,12 +3,86 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.controls label {
+  margin-right: 0.3rem;
+  font-weight: 500;
+}
+
+.controls select {
+  margin-right: 1.2rem;
+}
+
+.controls input[type="number"] {
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 60px;
+  margin-right: 0.5rem;
+}
+
+.controls input[type="number"]:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+}
+
+.controls input[type="range"] {
+  width: 100px;
+  margin: 0 0.3rem;
+  accent-color: #007bff;
+}
+
+.controls input[type="range"]:focus {
+  outline: 2px solid #007bff;
+}
+
+.controls span {
+  font-size: 1.1rem;
+  margin: 0 4px;
+  min-width: 32px;
+  display: inline-block;
+  text-align: center;
+}
+
+select {
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+select:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+}
+
+#categoryFilter {
+  min-width: 120px;
 }
 
 .productsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 2rem;
   padding: 30px 0;
 }
 
@@ -18,6 +92,7 @@
   padding: 50px;
   font-size: 1.2rem;
   color: #6c757d;
+  margin: 2rem 0;
 }
 
 .error {
@@ -25,6 +100,56 @@
   padding: 50px;
   color: #dc3545;
   font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pagination button {
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: 4px;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.pagination button:disabled {
+  background: #e0e0e0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination .activePage {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Search Box */
+.searchBox {
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+  margin-right: 1.2rem;
+}
+
+.searchBox:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
 }
 
 /* Responsive Design */
